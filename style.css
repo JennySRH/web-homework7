@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+}
+
+#puzzle{
+    width: 356px;
+    height: 352px;
+    margin: 0 auto;
+}
+
+#button {
+    width: 122px;
+    height: 42px;    
+    background-color: rgb(0, 128, 255);
+    margin:0 auto;
+    text-align: center;
+    line-height: 42px;
+    color: white;
+    font-size: 22px;
+}
