@@ -1,3 +1,4 @@
+var count = 0;
 var map = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 window.onload = function() {
     var puzzle = document.getElementById("puzzle");
@@ -10,31 +11,37 @@ window.onload = function() {
     }
     button = document.getElementById("button"); 
     button.addEventListener("click",start);
+    var counter = document.getElementById("count");
+    counter.innerHTML="step: "+count;
 }
 
 
 function start() {
     for(var i = 0;i < 16;i++) {
-        var temp1 = parseInt(Math.random()*100%16);
-        var temp2 = parseInt(Math.random()*100%16);
+        var temp1 = parseInt(Math.random()*100%15);
+        var temp2 = parseInt(Math.random()*100%15);
         var tmp = map[temp1];
         map[temp1] = map[temp2];
         map[temp2] = tmp;
     }
-    if(map[15] == 15) {
-        map[15] = 0;
-        map[0] = 15;
-    }
+    var temp3 = parseInt(Math.random()*100%15);
+    var a = map[15];
+    map[15] =map[temp3];
+    map[temp3] = a;
     var j;
     for(j = 0;map[j] != 15 ;j++) {}
-    while((map[15] + j)%2 != 1) {
+    var a = parseInt(map[15]/4) + 1 + map[15] + 1 - (parseInt(map[15]+1)/4)*4
+    while((a + j + 1)%2 != 1) {
         var temp1 = parseInt(Math.random()*100%15);
         var tmp = map[temp1];
         map[temp1] = map[j];
         map[j] = tmp;
         j = temp1;
     }
-    swap();    
+    swap();
+    count = 0;
+    var counter = document.getElementById("count");
+    counter.innerHTML="step: "+count;    
 }
 
 
@@ -111,31 +118,13 @@ function moveEvent(event) {
     var chips = document.getElementsByClassName("chip");
     for(var i = 0;i < 16;i++) {
         if(event.currentTarget == chips[i]) {
-            if(map[i]+1 == map[15]) {
-                var temp = map[15];
-                map[15] = map[i];
-                map[i] = temp;
-                swap();
-                checkWin();
-                break;
-            }
-            else if(map[i]-1 == map[15]) {
-                var temp = map[15];
-                map[15] = map[i];
-                map[i] = temp;
-                swap();
-                checkWin();
-                break;
-            }
-            else if(map[i] <12 && map[i]+4 == map[15]) {
-                var temp = map[15];
-                map[15] = map[i];
-                map[i] = temp;
-                swap();
-                checkWin();
-                break;
-            }
-            else if(map[i] > 3 && map[i]-4 == map[15]) {
+            if(map[i]+1 == map[15] || map[i]-1 == map[15] || 
+                (map[i] <12 && map[i]+4 == map[15]) ||
+                (map[i] > 3 && map[i]-4 == map[15])) 
+            {
+                count++;
+                var counter = document.getElementById("count");
+                counter.innerHTML="step: "+count;
                 var temp = map[15];
                 map[15] = map[i];
                 map[i] = temp;
