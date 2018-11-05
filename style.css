@@ -3,8 +3,8 @@ h1{
 }
 
 #puzzle{
-    width: 356px;
-    height: 352px;
+    width: 385px;
+    height: 385px;
     margin: 0 auto;
 }
 
@@ -17,4 +17,169 @@ h1{
     line-height: 42px;
     color: white;
     font-size: 22px;
+}
+
+#chip0 {
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: 0px 0px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip1{
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -92px 0px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip2 {
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -184px 0px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip3{
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -276px 0px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip4 {
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: 0px -82px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip5{
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -92px -82px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip6 {
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -184px -82px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip7{
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -276px -82px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip8 {
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: 0px -164px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip9 {
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -92px -164px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip10 {
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -184px -164px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip11{
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -276px -164px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip12{
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: 0px -246px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip13{
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -92px -246px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip14{
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -184px -246px;
+    border: 1.5px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip15{
+    float: left;
+    width: 89px;
+    height: 88px;
+    background:white no-repeat;
+}
+
+#chip0:hover,#chip1:hover,#chip2:hover,#chip3:hover,#chip4:hover,#chip5:hover,#chip6:hover,#chip7:hover,#chip8:hover,#chip9:hover,#chip10:hover,#chip11:hover,#chip12:hover,#chipa13:hover,#chip14:hover {
+    transform: scale(1.05);
+}
+
+#button:hover {
+    transform: scale(1.05);
 }
