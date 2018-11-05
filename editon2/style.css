@@ -1,0 +1,224 @@
+h1{
+    text-align: center;
+}
+
+#puzzle{
+    position: relative;
+    width: 385px;
+    height: 385px;
+    margin: 0 auto;
+}
+
+#button {
+    width: 122px;
+    height: 42px;    
+    background-color: rgb(0, 128, 255);
+    margin:0 auto;
+    text-align: center;
+    line-height: 42px;
+    color: white;
+    font-size: 22px;
+}
+
+#puzzle #chip0 {
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: 0px 0px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#puzzle #chip1{
+    position: absolute;
+    top:0px;
+    left: 89px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -92px 0px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip2 {
+    position: absolute;
+    top:0px;
+    left: 178px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -184px 0px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip3{
+    position: absolute;
+    top:0px;
+    left: 267px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -276px 0px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip4 {
+    position: absolute;
+    top:88px;
+    left: 0px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: 0px -82px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip5{
+    position: absolute;
+    top:88px;
+    left: 89px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -92px -82px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip6 {
+    position: absolute;
+    top:88px;
+    left: 178px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -184px -82px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip7{
+    position: absolute;
+    top:88px;
+    left: 267px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -276px -82px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip8 {
+    position: absolute;
+    top:176px;
+    left: 0px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: 0px -164px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip9 {
+    position: absolute;
+    top:176px;
+    left: 89px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -92px -164px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip10 {
+    position: absolute;
+    top:176px;
+    left: 178px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -184px -164px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip11{
+    position: absolute;
+    top:176px;
+    left: 267px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -276px -164px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip12{
+    position: absolute;
+    top:264px;
+    left: 0px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: 0px -246px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip13{
+    position: absolute;
+    top:264px;
+    left: 89px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -92px -246px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip14{
+    position: absolute;
+    top:264px;
+    left: 178px;
+    width: 89px;
+    height: 88px;
+    background:url(panda.jpg) no-repeat;
+    background-position: -184px -246px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+
+}
+#chip15{
+    position: absolute;
+    top:264px;
+    left: 267px;
+    width: 89px;
+    height: 88px;
+    background:white no-repeat;
+    z-index: -1;
+
+}
+
+#chip0:hover,#chip1:hover,#chip2:hover,#chip3:hover,#chip4:hover,#chip5:hover,#chip6:hover,#chip7:hover,#chip8:hover,#chip9:hover,#chip10:hover,#chip11:hover,#chip12:hover,#chipa13:hover,#chip14:hover {
+    transform: scale(1.05);
+}
+
+#button:hover {
+    transform: scale(1.05);
+}
+
+#chip0,#chip1,#chip2,#chip3,#chip4,#chip5,#chip6,#chip7,#chip8,#chip9,#chip10,#chip11,#chip12,#chip13,#chip14 {
+    transition-duration: 0.2s;
+}
